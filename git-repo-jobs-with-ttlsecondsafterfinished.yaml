@@ -2,12 +2,12 @@ apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
   name: jobs-with-ttlsecondsafterfinished
-  namespace: fleet-default
+  namespace: fleet-local
 spec:
   branch: main
   paths:
   - jobs-with-ttlsecondsafterfinished
-  repo: https://github.com/SUSE-Technical-Marketing/fleet-job-deployment-examples.git
+  repo: https://github.com/manno/fleet-job-deployment-examples.git
   targets:
   #Select example: All cluster except Harvester ones
   #- clusterSelector:

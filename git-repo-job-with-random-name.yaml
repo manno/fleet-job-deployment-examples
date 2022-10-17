@@ -2,12 +2,12 @@ apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
   name: job-with-random-name
-  namespace: fleet-default
+  namespace: fleet-local
 spec:
   branch: main
   paths:
   - /job-with-random-name
-  repo: https://github.com/SUSE-Technical-Marketing/fleet-job-deployment-examples.git
+  repo: https://github.com/manno/fleet-job-deployment-examples.git
   #Sample target: select single cluster by name
   #targets:
-  #- clusterName: c-t6tzn  
+  #- clusterName: c-t6tzn
