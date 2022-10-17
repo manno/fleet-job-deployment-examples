@@ -6,6 +6,7 @@ helm:
   values:
     piplaces: 20
 
+# not working, can't remove whole objects?
 diff:
   comparePatches:
   - apiVersion: v1

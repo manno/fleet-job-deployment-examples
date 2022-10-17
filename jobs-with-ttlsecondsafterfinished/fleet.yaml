@@ -5,3 +5,11 @@ helm:
   # Number of PI decimals to be calculated
   values:
     piplaces: 20
+
+diff:
+  comparePatches:
+  - apiVersion: v1
+    kind: Job
+    name: job-with-ttlsecondsafterfinished
+    operations:
+    - {"op":"remove", "path":"/"}
